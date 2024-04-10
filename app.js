@@ -1,4 +1,6 @@
 const UserRoutes = require('./Routes/User.routes')
+const RoleRoutes = require('./Routes/Role.routes')
+const PermissionRoutes = require('./Routes/Permissions.routes')
 
 
 const express = require('express')
@@ -9,6 +11,8 @@ const mongoose = require('mongoose')
 app.use(bodyParser.json())
 
 app.use('/api/v1/users', UserRoutes)
+app.use('/api/v1/roles', RoleRoutes)
+app.use('/api/v1/permissions', PermissionRoutes)
 
 
 

@@ -8,7 +8,7 @@ const validatePermissionId = createValidationMiddleware('genericId')
 const permissionController = require('../Controllers/PermissionsController')
 
 
-router.post('/addpermission', validatePermissionsInput, permissionController.addpermission)
+router.post('/addpermission', validatePermissionsInput, permissionController.addPermission);
 
 router.put('/updatePermission/:id', [validatePermissionId, validatePermissionsInput], permissionController.updatePermission)
 

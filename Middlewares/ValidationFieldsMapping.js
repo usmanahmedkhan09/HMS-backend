@@ -11,6 +11,11 @@ const modelFieldMapping = {
         role: { validations: [body('role').notEmpty().withMessage('role is required')] },
         email: { validations: [body('email').isEmail().withMessage('Please enter a valid email')] }
     },
+    role: {
+        name: { validations: [body('name').notEmpty().withMessage('name is required')] },
+        permissions: { validations: [body('permissions').notEmpty().withMessage('permmissions is required')] },
+    },
+
 };
 
 module.exports = modelFieldMapping

@@ -15,6 +15,9 @@ const modelFieldMapping = {
         name: { validations: [body('name').notEmpty().withMessage('name is required')] },
         permissions: { validations: [body('permissions').notEmpty().withMessage('permmissions is required')] },
     },
+    permission: {
+        name: { validations: [body('name').notEmpty().withMessage('name is required')] },
+    }
 
 };
 
